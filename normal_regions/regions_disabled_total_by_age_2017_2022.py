@@ -1,5 +1,4 @@
 # Преобразование таблицы disabled_total_by_age_2017_2022.csv к истинным субъектам РФ -> CSV , разибитие по годам
-
 import pandas as pd
 
 if __name__ == '__main__':

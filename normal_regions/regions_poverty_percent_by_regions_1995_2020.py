@@ -1,3 +1,5 @@
+#  Преобразование таблицы poverty_percent_by_regions_1992_2020.csv к истинным субъектам РФ -> CSV (1995-2020)
+
 import pandas as pd
 
 if __name__ == '__main__':
