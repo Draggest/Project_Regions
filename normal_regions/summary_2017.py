@@ -1,4 +1,4 @@
-# Создание итогового датасета по 2107 году из преобразованных данных
+# Создание итогового датасета по 2017 году из преобразованных данных
 import pandas as pd
 
 if __name__ == '__main__':
@@ -53,4 +53,4 @@ if __name__ == '__main__':
     main_data_2017 = main_data_2017.merge(data_newborn[['Region','2017']],left_on='Region',right_on='Region',how='left')
     main_data_2017.rename({'2017':'newborn'},axis=1,inplace=True)
     
-    main_data_2017.to_csv('data/summary_data/2017.csv')
+    main_data_2017.to_csv('data/summary_data/eda2017.csv')

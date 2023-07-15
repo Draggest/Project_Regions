@@ -4,7 +4,7 @@ import seaborn as sns
 from sklearn.cluster import KMeans 
 from sklearn.metrics import silhouette_score
 
-
+# Функция локтя для поиска оптимального кол-ва кластеров
 def elbow(data):
     def get_inertia(cluster_num, X):
         k_means =  KMeans(n_clusters=cluster_num,n_init=10, random_state=42)
@@ -26,7 +26,7 @@ def elbow(data):
     sns.lineplot(data=res_df, x="cluster", y="inertia", marker= "o")
     return None
 
-
+# Функция силуэта для поиска оптимального кол-ва кластеров
 def silhouette(data):
     def get_silhouette(cluster_num, X):
         kmeans =  KMeans(n_clusters=cluster_num, init='k-means++', n_init=10, random_state=42)
