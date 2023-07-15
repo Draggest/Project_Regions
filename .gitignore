@@ -167,5 +167,3 @@ cython_debug/
 *.xls
 # JSON
 *.json
-# JPG
-*.jpg
